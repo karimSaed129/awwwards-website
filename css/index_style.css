@@ -1,0 +1,99 @@
+body
+{
+    font-family: 'segoe ui light';
+}
+
+.item
+{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.item-caption
+{
+    text-align: center;
+    background-color: #fff;
+    width: 80%;
+    padding: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: all 0.3s;
+    transition-delay: 1s;
+    transform: translateY(0px)
+}
+.img-item
+{
+    transition: all 1s;
+    cursor: pointer;
+}
+.item:hover .img-item
+{
+    transform: scale(1.2)
+}
+.item:hover .item-caption
+{
+    opacity: 1;
+        transform: translateY(-30px)
+
+}
+
+.lightbox-container
+{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.show
+{
+    display: block;
+}
+#close 
+{
+    cursor: pointer;
+    font-size: 20px;
+}
+.lightbox-img
+{
+    height: 500px;
+    background-image: url(../images/portfolio-2.jpg);
+    background-size: 100% 100%;
+    
+}
+.alaa
+{
+    margin-top: 50px;
+    position: relative;
+}
+#close
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#prev 
+{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+#next
+{
+    position: absolute;
+    top: 50%;
+    right: 10px ;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
